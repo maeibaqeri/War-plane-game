@@ -6,6 +6,7 @@ TagManager:
   tags:
   - jets
   - Coin
+  - food
   layers:
   - Default
   - TransparentFX
