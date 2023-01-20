@@ -9,10 +9,10 @@ public class plater_move : MonoBehaviour
     public float rotationSpeed=5f;
     public Score_manege score_value;
     public Score_manege score_value2;
-  
+    public GameObject gameOverPanel;
     void Start()
     {
-        
+     gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,6 +56,7 @@ public class plater_move : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag=="jets"){
              Time.timeScale = 0;
+             gameOverPanel.SetActive(true);
             
         }
         if(collision.gameObject.tag=="Coin"){
