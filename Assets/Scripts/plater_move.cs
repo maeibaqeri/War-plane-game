@@ -5,9 +5,10 @@ using UnityEngine;
 public class plater_move : MonoBehaviour
 {
     public Transform transform;
-        public float speed=2f;
-         public float rotationSpeed=5f;
-    // Start is called before the first frame update
+    public float speed=2f;
+    public float rotationSpeed=5f;
+    public Score_manege score_value;
+  
     void Start()
     {
         
@@ -54,6 +55,11 @@ public class plater_move : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag=="jets"){
              Time.timeScale = 0;
+            
+        }
+        if(collision.gameObject.tag=="Coin"){
+            Destroy(collision.gameObject);
+           score_value.score+=10;
             
         }
        

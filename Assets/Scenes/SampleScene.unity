@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 60
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -194,7 +194,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -432,6 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779743215}
   - component: {fileID: 779743216}
+  - component: {fileID: 779743217}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -470,6 +471,19 @@ MonoBehaviour:
   - {fileID: 774016260437460004, guid: 0123b86f100529b4096adaed8732c6a2, type: 3}
   - {fileID: 5805025089003760424, guid: 46d37265a7411674586158dbdd38b4d0, type: 3}
   - {fileID: 6536872856873010354, guid: 1012ced43baec134a9bd3cd90d0ddd6d, type: 3}
+--- !u!114 &779743217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779743214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3a3d7d80fbae347a47d10c526ed767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefabs: {fileID: 6585592317014359208, guid: 9be20d46ad5c714499b5bf0eed380600, type: 3}
 --- !u!1 &1067926014
 GameObject:
   m_ObjectHideFlags: 0

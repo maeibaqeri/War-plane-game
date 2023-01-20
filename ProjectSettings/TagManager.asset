@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - jets
+  - Coin
   layers:
   - Default
   - TransparentFX
