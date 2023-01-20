@@ -8,6 +8,7 @@ public class plater_move : MonoBehaviour
     public float speed=2f;
     public float rotationSpeed=5f;
     public Score_manege score_value;
+    public Score_manege score_value2;
   
     void Start()
     {
@@ -60,6 +61,11 @@ public class plater_move : MonoBehaviour
         if(collision.gameObject.tag=="Coin"){
             Destroy(collision.gameObject);
            score_value.score+=10;
+            
+        }
+        if(collision.gameObject.tag=="food"){
+            Destroy(collision.gameObject);
+           score_value2.score+=20;
             
         }
        
